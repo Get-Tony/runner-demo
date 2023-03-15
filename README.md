@@ -18,17 +18,28 @@ The following commands must be available on the system:
   - package_manager (Debian12+): ```ansible-runner```
   - pip: ```requirements.txt```
 
-## PyPi installation
+## Installing requirements with pip
 
+Git must be installed on the system separately.
 The following command will install the required python packages:
 
     pip3 install -r requirements.txt
 
+## Dependencies
+
+The following repositories will be cloned during the demo:
+
+- [github.com/get-tony/service_service1](https://github.com/get-tony/service_service1)
+- [github.com/get-tony/role_test](https://github.com/get-tony/role_test)
+
 ## Usage
 
-- Run: ./clone_service1.sh
-- Read and comply to: services/service1/README.md
-- Run: ./run.sh
+- Execute:
+  - ```./clone_service1.sh```
+- Read and comply to:
+  - ```services/service1/README.md```
+- Execute:
+  - ```./run.sh```
 
 ## License
 
