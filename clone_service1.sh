@@ -1,5 +1,5 @@
 #!/bin/bash
-# EXAMPLE of how to run a playbook using ansible-runner.
+# EXAMPLE of how to clone a custom service.
 # Anthony Pagan - 15/03/2023
 
 # Early exit if missing commands
@@ -12,11 +12,13 @@ for cmd in "${REQUIRED_COMMANDS[@]}"; do
     fi
 done
 
-# Verify service1 exists
+# Clone the demo service repo
 if [ ! -d "services/service1" ]; then
-    echo "ERROR: Please run 'clone_service1.sh' then try again. "
-    exit 1
+    git clone https://github.com/get-tony/service_service1.git services/service1
 fi
 
-# Run the environment
-ansible-runner run services/service1 -p main.yml --rotate-artifacts 7
+# Verify the service repo exists
+if [ ! -d "services/service1/inventory/host_vars" ]; then
+    echo "ERROR: service1 is not configured. See its 'services/service1/README.md'"
+    exit 1
+fi

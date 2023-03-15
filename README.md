@@ -26,10 +26,9 @@ The following command will install the required python packages:
 
 ## Usage
 
-Run the following commands to start the demo:
-
-    chmod +x run.sh
-    ./run.sh
+- Run: ./clone_service1.sh
+- Read and comply to: services/service1/README.md
+- Run: ./run.sh
 
 ## License
 
