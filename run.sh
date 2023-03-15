@@ -14,7 +14,7 @@ done
 
 # Clone the demo service repo
 if [ ! -d "services/service1" ]; then
-    echo 'git clone https://github.com/get-tony/service_service1.git services/service1'
+    git clone https://github.com/get-tony/service_service1.git services/service1
 fi
 
 # Verify the service repo exists
