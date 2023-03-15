@@ -18,8 +18,8 @@ if [ ! -d "services/service1" ]; then
 fi
 
 # Verify the service repo exists
-if [ ! -d "services/service1" ]; then
-    echo "ERROR: The service repo does not exist. Please clone it and try again."
+if [ ! -d "services/service1/inventory/host_vars" ]; then
+    echo "ERROR: The service repo does not exist or is not configured. See its README.md"
     exit 1
 fi
 
