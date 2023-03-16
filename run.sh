@@ -14,7 +14,7 @@ done
 
 # Verify service1 exists
 if [ ! -d "services/service1" ]; then
-    echo "ERROR: Please run 'clone_service1.sh' then try again. "
+    echo "ERROR: Please run 'configure_service1.sh' then try again. "
     exit 1
 fi
 

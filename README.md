@@ -2,28 +2,26 @@
 
 This is a demo of the Runner framework.
 
-## Requirements
+## Test environment
 
-The following commands must be available on the system:
+- Controller OS: Debian 11
+- Python: 3.9.2
+- Ansible: 2.9.6
+- Git: 2.30.2
+- Ansible-Runner: 1.4.6
 
-- git
-  - version: ```2.25.1```+
-  - package_manager: ```git```
-- ansible
-  - version: ```2.9.6```+
-  - package_manager: ```ansible```
-  - pip: ```requirements.txt```
-- ansible-runner
-  - version: ```1.4.6```+
-  - package_manager (Debian12+): ```ansible-runner```
-  - pip: ```requirements.txt```
+## Installing Requirements
 
-## Installing requirements with pip
+Run the following commands as root or with sudo to install the requirements:
 
-Git must be installed on the system separately.
-The following command will install the required python packages:
+    apt install git python3-pip ansible ansible-lint
 
-    pip3 install -r requirements.txt
+## Installing Ansible-Runner
+
+Ansible-Runner is not available in Debian 11's package manager.
+Run the following command as root or with sudo to install with pip:
+
+    pip3 install ansible-runner
 
 ## Dependencies
 
@@ -34,12 +32,11 @@ The following repositories will be cloned during the demo:
 
 ## Usage
 
-- Execute:
-  - ```./clone_service1.sh```
-- Read and comply to:
-  - ```services/service1/README.md```
-- Execute:
-  - ```./run.sh```
+Execute:
+
+- ```./clone_service1.sh```
+- ```./configure_service1```
+- ```./run.sh```
 
 ## License
 
