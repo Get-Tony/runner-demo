@@ -5,9 +5,6 @@
 - hosts: localhost
   gather_facts: false
   connection: local
-  vars:
-    #http_proxy: http://
-
   tasks:
     - name: "Check for required commands"
       ansible.builtin.command: "{{ item }} --version"
@@ -30,13 +27,6 @@
       ansible.builtin.stat:
           path: services/service1
       register: service1_repo
-
-    - name: Set git http_proxy
-      git_config:
-        - name: http_proxy
-          value: "{{ http_proxy }}"
-          scope: local
-      when: http_proxy is defined
 
     - name: "Clone the demo service repo"
       ansible.builtin.git:

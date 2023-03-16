@@ -32,7 +32,14 @@ The following repositories will be cloned during the demo:
 
 ## Usage
 
-    $: ./pre_install_checks.sh && ./configure_service1.sh && ./run.sh
+Pre install checks:
+    $: ./pre_install_checks.sh
+
+Configure the demo service (Prepend with http(s) proxy env_vars if needed!):
+    $: ./configure_service1.sh
+
+Run the demo service:
+    $: ./run.sh
 
 ## License
 
