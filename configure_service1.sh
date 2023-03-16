@@ -14,7 +14,6 @@
       failed_when: required_commands.rc != 0
       with_items:
         - git
-        - ansible
         - ansible-runner
       ignore_errors: true
       changed_when: false
