@@ -14,14 +14,14 @@ This is a demo of the Runner framework.
 
 Run the following commands as root or with sudo to install the requirements:
 
-    Execute: apt-get install git python3-pip ansible ansible-lint
+    $: apt-get install git python3-pip ansible ansible-lint
 
 ## Installing Ansible-Runner
 
 Ansible-Runner is not available in Debian 11's package manager.
 Run the following command as root or with sudo to install with pip:
 
-    Execute: pip3 install ansible-runner
+    $: pip3 install ansible-runner
 
 ## Dependencies
 
@@ -32,7 +32,7 @@ The following repositories will be cloned during the demo:
 
 ## Usage
 
-    Execute: ./clone_service1.sh && ./configure_service1.sh && ./run.sh
+    $: ./pre_install_checks.sh && ./configure_service1.sh && ./run.sh
 
 ## License
 
