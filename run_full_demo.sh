@@ -19,4 +19,4 @@ GIT_PROXY_URL=$1
 HTTPS_PROXY=$GIT_PROXY_URL ./configure_service1.sh
 
 # Run the demo service
-HTTPS_PROXY=$GIT_PROXY_URL ./run.sh
+HTTPS_PROXY=$GIT_PROXY_URL ./run_service1.sh

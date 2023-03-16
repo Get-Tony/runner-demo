@@ -42,7 +42,7 @@ Configure the demo service:
 
 Run the demo service:
 
-    $: ./run.sh
+    $: ./run_service1.sh
 
 ### HTTP(S) Proxy
 
