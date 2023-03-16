@@ -12,17 +12,6 @@ fi
 
 GIT_PROXY_URL=$1
 
-# Clone runner-demo repo
-HTTPS_PROXY=$GIT_PROXY_URL git clone https://github.com/Get-Tony/runner-demo.git
-
-# If runner-demo exists cd into it
-if [ -d runner-demo ]; then
-    cd runner-demo
-else
-    echo "runner-demo was not sucessfully cloned"
-    exit 1
-fi
-
 # Run preinstall checks
 ./pre_install_checks.sh
 
