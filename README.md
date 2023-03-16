@@ -14,7 +14,7 @@ This is a demo of the Runner framework.
 
 Run the following commands as root or with sudo to install the requirements:
 
-    apt install git python3-pip ansible ansible-lint
+    apt-get install git python3-pip ansible ansible-lint
 
 ## Installing Ansible-Runner
 
