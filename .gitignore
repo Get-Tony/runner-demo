@@ -164,3 +164,6 @@ services/*
 # Allow placeholder files.
 !**/.gitkeep
 !**/.placeholder
+
+# Ignore temp objects.
+**/*_temp*
