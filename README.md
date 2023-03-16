@@ -2,6 +2,25 @@
 
 This is a demo of the Runner framework.
 
+## Demo workflows
+
+### Controller level
+
+1. Run pre install checks to ensure the environment is ready.
+2. Clone defined service(s) locally.
+3. Configure the service(s) for the environment, if required.
+4. Run the service(s).
+
+### Service level
+
+1. Clone and include any defined git based roles locally.
+2. Apply any defined Ansible roles.
+
+### Role level
+
+1. Gather network facts from target host.
+2. Display the IPv4 address(s) of the target host.
+
 ## Test environment
 
 - Controller OS: Debian 11
@@ -23,30 +42,15 @@ Run the following command as root or with sudo to install with pip:
 
     $: pip3 install ansible-runner
 
-## Dependencies
-
-The following repositories will be cloned during the demo:
-
-- [github.com/get-tony/service_service1](https://github.com/get-tony/service_service1)
-- [github.com/get-tony/role_test](https://github.com/get-tony/role_test)
-
 ## Usage
 
-Pre install checks:
+If an HTTP(S) proxy is required, see the [HTTP(S) Proxy](#http(s)-proxy) section below.
 
-    $: ./pre_install_checks.sh
+    $: ./fun_full_demo.sh
 
-Configure the demo service:
+## HTTP(S) Proxy
 
-    $: ./configure_service1.sh
-
-Run the demo service:
-
-    $: ./run_service1.sh
-
-### HTTP(S) Proxy
-
-In order to use an HTTP(S) proxy, correct and prepend the following environment variables to the commands above:
+In order to use an HTTP(S) proxy, correct and prepend one or both of the following environment variables to the command show in the [Usage](#usage) section above:
 
     $: http_proxy=http://proxy.example.com:8080 https_proxy=http://proxy.example.com:8080
 
