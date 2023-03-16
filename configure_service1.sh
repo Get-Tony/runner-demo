@@ -1,5 +1,6 @@
 #!/usr/bin/ansible-playbook
-# Hacky script to prepare the demo service for use.
+# This is actually an ansible playbook but it's being run as a shell script.
+# Hack to prepare the demo service for use.
 # Anthony Pagan - 15/03/2023
 
 - hosts: localhost
