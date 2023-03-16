@@ -33,13 +33,22 @@ The following repositories will be cloned during the demo:
 ## Usage
 
 Pre install checks:
+
     $: ./pre_install_checks.sh
 
-Configure the demo service (Prepend with http(s) proxy env_vars if needed!):
+Configure the demo service:
+
     $: ./configure_service1.sh
 
 Run the demo service:
+
     $: ./run.sh
+
+### HTTP(S) Proxy
+
+In order to use an HTTP(S) proxy, correct and prepend the following environment variables to the commands above:
+
+    $: http_proxy=http://proxy.example.com:8080 https_proxy=http://proxy.example.com:8080
 
 ## License
 
