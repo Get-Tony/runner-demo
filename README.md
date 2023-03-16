@@ -35,7 +35,7 @@ The following repositories will be cloned during the demo:
 Execute:
 
 - ```./clone_service1.sh```
-- ```./configure_service1```
+- ```./configure_service1.sh```
 - ```./run.sh```
 
 ## License
