@@ -1,4 +1,4 @@
-# Runner Demo
+# Ansible Runner Demo
 
 This is a demo of the Runner framework.
 
@@ -13,10 +13,14 @@ This is a demo of the Runner framework.
 
 ### Service level
 
+**Demo Repo:** <https://github.com/Get-Tony/service_service1.git>
+
 1. Clone and include any defined git based roles locally.
 2. Apply any defined Ansible roles.
 
 ### Role level
+
+**Demo Repo:** <https://github.com/Get-Tony/role_test.git>
 
 1. Gather network facts from target host.
 2. Display the IPv4 address(s) of the target host.
@@ -44,11 +48,11 @@ Run the following command as root or with sudo to install with pip:
 
 ## Usage
 
-If an HTTP(S) proxy is required, see the [HTTP(S) Proxy](#http(s)-proxy) section below.
+If an HTTP(S) proxy is required, see the [HTTP Proxy](#http-proxy) section below.
 
     $: ./fun_full_demo.sh
 
-## HTTP(S) Proxy
+## HTTP Proxy
 
 In order to use an HTTP(S) proxy, correct and prepend one or both of the following environment variables to the command show in the [Usage](#usage) section above:
 
